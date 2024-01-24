@@ -102,7 +102,7 @@ img {
     bottom:0;  
     border-radius: 2px;
     background-color: #404BBF;
-    border-bottom: -1px;
+    bottom: -1px;
     content: "";
     opacity: 0;
 }
@@ -386,7 +386,8 @@ img {
     transform: translateY(0%);
 }
 .portfolio_blue_card {
-    
+    width: 360px;
+    height: 300px;
 }
 .portfolio_item {
     display: flex;
@@ -405,6 +406,9 @@ img {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio_item .portfolio_text:hover {
+    transform: translateY(0%);
 }
 .portfolio_text_container {
     display: flex;
@@ -485,13 +489,14 @@ align-items: baseline;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 16px;
     
 }
 .footer_soc_list {
     display: inline-flex;
      align-items: flex-start;
      gap: 16px;
-     margin-top: 16px;
+     
      
     
 }
