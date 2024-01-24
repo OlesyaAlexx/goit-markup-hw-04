@@ -363,8 +363,10 @@ img {
 } 
 
 .overlay {
-   position: relative;
+   position: absolute;
    overflow: hidden;
+transition: transform 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
       
 }
 .overlay_text {
@@ -373,33 +375,31 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    position: absolute;
     top: 0;
     padding: 40px 32px;
     background-color: #4D5AE5;
     height: 100%;
     width: 100%;
-    transition: transform 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(100%);
+    
 }
-.overlay_text:hover .overlay {
-    transform: translateY(0%);
-}
+
 .portfolio_blue_card {
     width: 360px;
     height: 300px;
+    
+    
 }
 .portfolio_item {
     display: flex;
-    width: 360px;
     height: 420px;
     padding-bottom: 32px;
     flex-direction: column;
     align-items: flex-start;
-    flex-shrink: 0;
     width: calc((100% - 48px) / 3);
     border: 1px solid #E7E9FC;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 .portfolio_item:hover {
     border: 1px solid #F4F4FD;
@@ -407,7 +407,7 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.portfolio_item .portfolio_text:hover {
+.portfolio_item:hover .overlay {
     transform: translateY(0%);
 }
 .portfolio_text_container {
@@ -418,7 +418,6 @@ img {
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;   
-    border: 1px solid #E7E9FC;
     border-top: none;
     
     
@@ -489,7 +488,7 @@ align-items: baseline;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     
 }
 .footer_soc_list {
