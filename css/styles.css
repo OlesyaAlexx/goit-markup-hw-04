@@ -303,7 +303,7 @@ img {
     margin-top: 8px;
 }
 .team_soc_icon {
-    fill: #FFFFFF;
+    fill: #F4F4FD;
     
     
     
@@ -319,6 +319,10 @@ img {
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team_soc_link:hover {
+    background-color: #404BBF;
 }
 
 /*#endregion*/
@@ -455,6 +459,12 @@ display: flex;
 }
 .footer_soc {
     display: flex;
+    width: 208px;
+    height: 80px;
+    margin-left:0;
+    flex-wrap: wrap;
+    flex-direction: row;
+           
     
 }
 .footer_title {
@@ -464,5 +474,30 @@ display: flex;
     line-height: 1.5;
     letter-spacing: 0.02em;
     
+}
+.footer_soc_list {
+    display: inline-flex;
+     align-items: flex-start;
+     gap: 16px;
+     margin-top: 16px;
+     
+    
+}
+.footer_soc_link {
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer_soc_icon {
+    fill: #F4F4FD;
+}
+.footer_soc_link:hover {
+    background-color: #31D0AA;
 }
 /*#endregion*/
