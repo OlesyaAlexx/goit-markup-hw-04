@@ -364,10 +364,7 @@ img {
 
 .overlay {
    position: relative;
-   overflow: hidden;
-
-    
-      
+   overflow: hidden;    
 }
 .overlay_text {
     color: #F4F4FD;
@@ -383,26 +380,13 @@ img {
     position: absolute;
     transform: translateY(100%);
     transition: transform 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: transform 250ms ease-in-out;
 }
 
-.portfolio_blue_card {
-    width: 360px;
-    height: 300px;
-    
-    
-    
-}
 .portfolio_item {
-    display: flex;
-    height: 420px;
-    padding-bottom: 32px;
-    flex-direction: column;
-    align-items: flex-start;
     width: calc((100% - 48px) / 3);
     border: 1px solid #E7E9FC;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
    
 }
 .portfolio_item:hover {
@@ -411,7 +395,7 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.portfolio_item:hover .overlay_text .overlay {
+.portfolio_item:hover .overlay_text {
     transform: translateY(0%);
 }
 .portfolio_text_container {
